@@ -1,8 +1,18 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators:
+class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_LINK = (By.CSS_SELECTOR, "#default > header > div.page_inner > div > div.basket-mini.pull-right.hidden-xs > span > a")
+
+
+class BasketPageLocators:
+    PRODUCT  = (By.CSS_SELECTOR, "#basket_formset > div:nth-child(6)")
+    TEXT = (By.CSS_SELECTOR, "#content_inner > p")
+
+
+class MainPageLocators:
+    pass
 
 
 class LoginPageLocators:
